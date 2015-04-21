@@ -28,6 +28,7 @@ let s:white          =  7
 let s:white_light    =  15
 
 let s:none           =  "NONE"
+let s:bold           =  "bold"
 
 " used for the columns set with 'colorcolumn'
 exec 'hi ColorColumn ctermbg=' . s:black_light . ' ctermfg=' . s:none . ' cterm=' . s:none
@@ -155,13 +156,13 @@ exec 'hi StatusLine ctermbg=' . s:white_light . ' ctermfg=' . s:black_light . ' 
 exec 'hi StatusLineNC ctermbg=' . s:white . ' ctermfg=' . s:black_light . ' cterm=' . s:none
 
 " tab pages line, not active tab page label
-exec 'hi TabLine ctermbg=' . s:white . ' ctermfg=' . s:black_light . ' cterm=bold'
+exec 'hi TabLine ctermbg=' . s:white . ' ctermfg=' . s:black_light . ' cterm='. s:bold
 
 " tab pages line, where there are no labels
 exec 'hi TabLineFill ctermbg=' . s:black_light . ' ctermfg=' . s:none . ' cterm=' . s:none
 
 " tab pages line, active tab page label
-exec 'hi TabLineSel ctermbg=' . s:black . ' ctermfg=' . s:white . ' cterm=bold'
+exec 'hi TabLineSel ctermbg=' . s:black . ' ctermfg=' . s:white . ' cterm='. s:bold
 
 " titles for output from ":set all", ":autocmd" etc.
 exec 'hi Title ctermbg=' . s:blue . ' ctermfg=' . s:black . ' cterm=' . s:none
@@ -258,4 +259,4 @@ exec 'hi Ignore ctermbg=' . s:none . ' ctermfg=' . s:none . ' cterm=' . s:none
 exec 'hi Error ctermbg=' . s:black_light . ' ctermfg=' . s:red . ' cterm=' . s:none
 
 " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-exec 'hi! Todo ctermbg=' . s:black . ' ctermfg=' . s:white_light . ' cterm=' . s:none
+exec 'hi! Todo ctermbg=' . s:black . ' ctermfg=' . s:yellow . ' cterm=' . s:bold
