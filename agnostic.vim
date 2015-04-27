@@ -29,6 +29,10 @@ let s:white_light    =  15
 
 let s:none           =  "NONE"
 let s:bold           =  "bold"
+let s:underline      =  "underline"
+let s:reverse        =  "reverse"
+let s:italic         =  "italic"
+let s:standout       =  "standout"
 
 " used for the columns set with 'colorcolumn'
 exec 'hi ColorColumn ctermbg=' . s:black_light . ' ctermfg=' . s:none . ' cterm=' . s:none
@@ -81,9 +85,6 @@ exec 'hi FoldColumn ctermbg=' . s:black_light . ' ctermfg=' . s:white . ' cterm=
 " column where signs are displayed
 exec 'hi SignColumn ctermbg=' . s:black_light . ' ctermfg=' . s:white . ' cterm=' . s:none
 
-" 'incsearch' highlighting; also used for the text replaced with ":s///c"
-exec 'hi IncSearch ctermbg=' . s:yellow_light . ' ctermfg=' . s:black . ' cterm=' . s:none
-
 " Line number for ":number" and ":#" commands, and when 'number' " or
 " 'relativenumber' option is set.
 exec 'hi LineNr ctermbg=' . s:black_light . ' ctermfg=' . s:white . ' cterm=' . s:none
@@ -121,10 +122,13 @@ exec 'hi PmenuThumb ctermbg=' . s:white . ' ctermfg=' . s:none . ' cterm=' . s:n
 " hit-enter prompt and yes/no questions
 exec 'hi Question ctermbg=' . s:blue . ' ctermfg=' . s:black . ' cterm=' . s:none
 
+" 'incsearch' highlighting; also used for the text replaced with ":s///c"
+exec 'hi IncSearch ctermbg=' . s:black . ' ctermfg=' . s:yellow_light . ' cterm=' . s:reverse
+
 " Last search pattern highlighting (see 'hlsearch').
 " Also used for highlighting the current line in the quickfix window and similar
 " items that need to stand out.
-exec 'hi Search ctermbg=' . s:yellow . ' ctermfg=' . s:black . ' cterm=' . s:none
+exec 'hi Search ctermbg=' . s:black . ' ctermfg=' . s:yellow  . ' cterm=' . s:reverse
 
 " Meta and special keys listed with ":map", also for text used to show
 " unprintable characters in the text, 'listchars'.
