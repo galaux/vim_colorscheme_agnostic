@@ -91,7 +91,7 @@ exec 'hi LineNr ctermbg=' . s:black_light . ' ctermfg=' . s:white . ' cterm=' . 
 
 " The character under the cursor or just before it, if it " is a paired
 " bracket, and its match.
-exec 'hi MatchParen ctermbg=' . s:white_light . ' ctermfg=' . s:red . ' cterm=' . s:none
+exec 'hi MatchParen ctermbg=' . s:none . ' ctermfg=' . s:white_light . ' cterm=' . s:reverse
 
 " 'showmode' message (e.g., "-- INSERT --")
 exec 'hi ModeMsg ctermbg=' . s:black . ' ctermfg=' . s:blue . ' cterm=' . s:none
