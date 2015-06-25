@@ -169,7 +169,7 @@ exec 'hi TabLineFill ctermbg=' . s:black_light . ' ctermfg=' . s:none . ' cterm=
 exec 'hi TabLineSel ctermbg=' . s:black . ' ctermfg=' . s:white . ' cterm='. s:bold
 
 " titles for output from ":set all", ":autocmd" etc.
-exec 'hi Title ctermbg=' . s:blue . ' ctermfg=' . s:black . ' cterm=' . s:none
+exec 'hi Title ctermbg=' . s:black . ' ctermfg=' . s:white_light . ' cterm=' . s:bold
 
 " Visual mode selection
 exec 'hi Visual ctermbg=' . s:white . ' ctermfg=' . s:black . ' cterm=' . s:none
