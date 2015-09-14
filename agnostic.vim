@@ -160,13 +160,13 @@ exec 'hi StatusLine ctermbg=' . s:white_light . ' ctermfg=' . s:black_light . ' 
 exec 'hi StatusLineNC ctermbg=' . s:white . ' ctermfg=' . s:black_light . ' cterm=' . s:none
 
 " tab pages line, not active tab page label
-exec 'hi TabLine ctermbg=' . s:white . ' ctermfg=' . s:black_light . ' cterm='. s:bold
+exec 'hi TabLine ctermbg=' . s:black . ' ctermfg=' . s:white . ' cterm='. s:bold
 
 " tab pages line, where there are no labels
 exec 'hi TabLineFill ctermbg=' . s:black_light . ' ctermfg=' . s:none . ' cterm=' . s:none
 
 " tab pages line, active tab page label
-exec 'hi TabLineSel ctermbg=' . s:black . ' ctermfg=' . s:white . ' cterm='. s:bold
+exec 'hi TabLineSel ctermbg=' . s:white . ' ctermfg=' . s:black_light . ' cterm='. s:bold
 
 " titles for output from ":set all", ":autocmd" etc.
 exec 'hi Title ctermbg=' . s:black . ' ctermfg=' . s:white_light . ' cterm=' . s:bold
