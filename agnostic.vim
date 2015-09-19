@@ -41,7 +41,7 @@ exec 'hi ColorColumn ctermbg=' . s:black_light . ' ctermfg=' . s:none . ' cterm=
 exec 'hi Conceal ctermbg=' . s:black_light . ' ctermfg=' . s:green_light . ' cterm=' . s:none
 
 " the character under the cursor
-exec 'hi Cursor ctermbg=' . s:red . ' ctermfg=' . s:green . ' cterm=' . s:none
+"exec 'hi Cursor ctermbg=' . s:none . ' ctermfg=' . s:none . ' cterm=' . s:reverse
 
 " like Cursor, but used when in IME mode
 exec 'hi CursorIM ctermbg=' . s:red . ' ctermfg=' . s:white_light . ' cterm=' . s:none
@@ -91,7 +91,7 @@ exec 'hi LineNr ctermbg=' . s:black_light . ' ctermfg=' . s:white . ' cterm=' . 
 
 " The character under the cursor or just before it, if it " is a paired
 " bracket, and its match.
-exec 'hi MatchParen ctermbg=' . s:cyan . ' ctermfg=' . s:black . ' cterm=' . s:none
+exec 'hi MatchParen ctermbg=' . s:none . ' ctermfg=' . s:none . ' cterm=' . s:reverse
 
 " 'showmode' message (e.g., "-- INSERT --")
 exec 'hi ModeMsg ctermbg=' . s:black . ' ctermfg=' . s:blue . ' cterm=' . s:none
