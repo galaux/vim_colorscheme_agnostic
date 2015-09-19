@@ -152,7 +152,7 @@ exec 'hi SpellLocal ctermbg=' . s:none . ' ctermfg=' . s:red . ' cterm=' . s:non
 exec 'hi SpellRare ctermbg=' . s:none . ' ctermfg=' . s:red . ' cterm=' . s:none
 
 " status line of current window
-exec 'hi StatusLine ctermbg=' . s:white_light . ' ctermfg=' . s:black_light . ' cterm=' . s:none
+exec 'hi StatusLine ctermbg=' . s:blue . ' ctermfg=' . s:black . ' cterm=' . s:none
 
 " status lines of not-current windows
 " Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line
