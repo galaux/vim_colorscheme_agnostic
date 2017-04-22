@@ -77,7 +77,7 @@ exec 'hi ErrorMsg ctermbg=' . s:red . ' ctermfg=' . s:black . ' cterm=' . s:none
 exec 'hi VertSplit ctermbg=' . s:black . ' ctermfg=' . s:white_light . ' cterm=' . s:none
 
 " line used for closed folds
-exec 'hi Folded ctermbg=' . s:black_light . ' ctermfg=' . s:white_light . ' cterm=' . s:none
+exec 'hi Folded ctermbg=' . s:black_light . ' ctermfg=' . s:white_light . ' cterm=' . s:italic
 
 " 'foldcolumn'
 exec 'hi FoldColumn ctermbg=' . s:black_light . ' ctermfg=' . s:white . ' cterm=' . s:none
