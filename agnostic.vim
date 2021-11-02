@@ -71,7 +71,7 @@ exec 'hi DiffDelete ctermbg=' . s:black . ' ctermfg=' . s:red . ' cterm=' . s:no
 exec 'hi DiffText ctermbg=' . s:black . ' ctermfg=' . s:blue . ' cterm=' . s:none
 
 " error messages on the command line
-exec 'hi ErrorMsg ctermbg=' . s:red . ' ctermfg=' . s:none . ' cterm=' . s:none
+exec 'hi ErrorMsg ctermbg=' . s:red . ' ctermfg=' . s:black . ' cterm=' . s:none
 
 " the column separating vertically split windows
 exec 'hi VertSplit ctermbg=' . s:none . ' ctermfg=' . s:white_light . ' cterm=' . s:none
@@ -152,7 +152,7 @@ exec 'hi SpellLocal ctermbg=' . s:none . ' ctermfg=' . s:red . ' cterm=' . s:non
 exec 'hi SpellRare ctermbg=' . s:none . ' ctermfg=' . s:red . ' cterm=' . s:none
 
 " status line of current window
-exec 'hi StatusLine ctermbg=' . s:blue . ' ctermfg=' . s:none . ' cterm=' . s:none
+exec 'hi StatusLine ctermbg=' . s:blue . ' ctermfg=' . s:black . ' cterm=' . s:none
 
 " status lines of not-current windows
 " Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line
@@ -172,7 +172,7 @@ exec 'hi TabLineSel ctermbg=' . s:none . ' ctermfg=' . s:white_light . ' cterm='
 exec 'hi Title ctermbg=' . s:none . ' ctermfg=' . s:white_light . ' cterm=' . s:bold
 
 " Visual mode selection
-exec 'hi Visual ctermbg=' . s:white . ' ctermfg=' . s:none . ' cterm=' . s:none
+exec 'hi Visual ctermbg=' . s:none . ' ctermfg=' . s:none . ' cterm=inverse'
 
 " Visual mode selection when vim is "Not Owning the Selection".
 " Only X11 Gui's gui-x11 and xterm-clipboard supports this.
